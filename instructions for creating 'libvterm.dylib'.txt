@@ -1,0 +1,6 @@
+instructions for creating libvterm.dylib:
+
+brew install libtool
+make
+cd src
+g++ -dynamiclib -undefined suppress -flat_namespace *.o -o libvterm.dylib
