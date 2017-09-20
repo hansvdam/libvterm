@@ -4,3 +4,5 @@ brew install libtool
 make
 cd src
 g++ -dynamiclib -undefined suppress -flat_namespace *.o -o libvterm.dylib
+
+(you can also just take the file in .libs called libvterm.0.dylib and rename it to libvterm.dylib to have the same thing...
